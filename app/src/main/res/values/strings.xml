@@ -12,4 +12,11 @@
     <string name="author_fact_2">Nelson Mandela was South Africa\'s first democratically elected president. </string>
     <string name="fact_error">Fact missing </string>
     <string name="imageview_description.xml">Inspirational image of mountains or kittens and such. </string>
+    //Homework Quotes
+    <string name="quote_text_3">You cannot always see the light at the end of a tunnel but if you just keep moving, you will come to a better place</string>
+    <string name="quote_author_3">Uncle Iroh from Avatar: The Last Airbender (Voiced by Mako Iwamatsu)</string>
+    <string name="author_fact_3"> Part of the reason why Iroh is silent throughout most of Season 3 of The Last Airbender was because the crew was still looking for a new voice actor while filming due to Mako unfortunately passing away from cancer after the crew finished filming season 2. </string>
+    <string name="quote_text_4">Everybody always figures the time they live in is the most epic, most important age to end all ages. But tyrants and heroes rise and fall, and historians sort out the pieces</string>
+    <string name="quote_author_4">Jolee Bindo from Knights of the Old Republic (Voiced by Kevin Michael Richardson)</string>
+    <string name="author_fact_4">Contrary to popular belief the first beings to use The Force in Star Wars were neither Jedi nor Sith but a group kn  </string>
 </resources>
