@@ -11,4 +11,5 @@
     <string name="author_fact_1">Helen Hayes won an Emmy, a Grammy, an Oscar, and a Tony award.</string>
     <string name="author_fact_2">Nelson Mandela was South Africa\'s first democratically elected president. </string>
     <string name="fact_error">Fact missing </string>
+    <string name="imageview_description.xml">Inspirational image of mountains or kittens and such. </string>
 </resources>

@@ -4,18 +4,28 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.os.Bundle;
 import android.content.Intent;
 
+/**
+ * Main activity for the application.
+ * Displays a series of quotes.
+ */
 
 public class QuoteActivity extends AppCompatActivity {
+    /** Key for fact about author stored in Intent sent to AuthorFactActivity. */
     public static final String EXTRA_AUTHOR_FACT=
             "edu.andrews.cptr252.rlsummerscales.quoteoftheday.author_fact";
     private static final String KEY_QUOTE_INDEX="quoteIndex";
     private TextView mQuoteTextView;
     private TextView mAuthorTextView;
     private Button mNextButton;
+
+    /** ImageView used to display inspirational image */
+    private ImageView mImageView;
+
 
     /**Quotes Used*/
     private Quote[] mQuoteList=new Quote[]{
@@ -26,6 +36,11 @@ public class QuoteActivity extends AppCompatActivity {
 
     /**Index*/
     private int mCurrentIndex=0;
+
+    /**
+     * Remember the current quote when the activity is destroyed
+     * @param savedInstanceState Bundle used for saving identity of current quote.
+     */
 
     @Override
     public void onSaveInstanceState(Bundle savedInstanceState){
@@ -46,7 +61,7 @@ public class QuoteActivity extends AppCompatActivity {
         startActivity(i);
     }
 
-    /** Display the quote*/
+    /** Display the quote at the current index */
     private void updateQuote()
     {
         int quote =mQuoteList[mCurrentIndex].getQuote();
@@ -56,6 +71,12 @@ public class QuoteActivity extends AppCompatActivity {
         mAuthorTextView.setText(author);
     }
 
+
+
+    /**
+     * Setup and inflate layout.
+     * @param savedInstanceState Previously saved Bundle
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -65,6 +86,12 @@ public class QuoteActivity extends AppCompatActivity {
         if(savedInstanceState!=null){
             mCurrentIndex= savedInstanceState.getInt(KEY_QUOTE_INDEX);
         }
+
+        // Display image
+        mImageView = findViewById(R.id.imageView);
+        mImageView.setImageResource(R.drawable.mountain_pic);
+
+
 
         //get references to our textviews
         mQuoteTextView = findViewById(R.id.quoteTextView);
