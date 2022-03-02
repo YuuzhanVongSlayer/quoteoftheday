@@ -72,6 +72,32 @@ public class QuoteActivity extends AppCompatActivity {
 
         mQuoteTextView.setText(quote);
         mAuthorTextView.setText(author);
+
+        //Homework (Adding new images)
+
+        if(mCurrentIndex==0)
+        {
+            mImageView.setImageResource(R.drawable.mountain_pic);
+        }
+        if(mCurrentIndex==1)
+        {
+            mImageView.setImageResource(R.drawable.cheese);
+        }
+        if(mCurrentIndex==2)
+        {
+            mImageView.setImageResource(R.drawable.nel);
+        }
+        if(mCurrentIndex==3)
+        {
+            mImageView.setImageResource(R.drawable.iroh);
+        }
+        if(mCurrentIndex==4)
+        {
+            mImageView.setImageResource(R.drawable.bindo);
+        }
+
+        //end of homework code
+
     }
 
 
@@ -95,7 +121,6 @@ public class QuoteActivity extends AppCompatActivity {
         mImageView.setImageResource(R.drawable.mountain_pic);
 
 
-
         //get references to our textviews
         mQuoteTextView = findViewById(R.id.quoteTextView);
         mAuthorTextView = findViewById(R.id.authorTextView);
@@ -116,11 +141,15 @@ public class QuoteActivity extends AppCompatActivity {
             public void onClick(View v) {
 
 
+
+
                 mCurrentIndex++;
                 if (mCurrentIndex == mQuoteList.length) {
                     mCurrentIndex = 0;
                 }
                 updateQuote();
+
+
             }
 
             ;
