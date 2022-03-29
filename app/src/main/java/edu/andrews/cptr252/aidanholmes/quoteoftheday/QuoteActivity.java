@@ -100,8 +100,6 @@ public class QuoteActivity extends AppCompatActivity {
 
     }
 
-
-
     /**
      * Setup and inflate layout.
      * @param savedInstanceState Previously saved Bundle
